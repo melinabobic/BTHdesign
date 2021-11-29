@@ -1,0 +1,172 @@
+
+
+* {
+    box-sizing: border-box;
+    border: none 0;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+html {
+  font-size: 14px;
+}
+
+
+ol, ul {
+    margin-left: 4em;
+    margin-right: 4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family:monospace;
+}
+
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* Placement */
+
+body {
+    display: flex;
+    text-align: center;
+    font-family: monospace;
+    line-height: 1.5em;
+    color: #444;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-left: 17em;
+  margin-right: 17em;
+  text-align: justify;
+}
+
+.main img {
+  max-width: 100%;
+
+}
+
+
+@media (max-width: 800px) {
+  .main {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+}
+
+
+
+
+
+/* Header */
+
+
+.site-header {
+    display: flex;
+    align-content:flex-start;
+    align-items:center;
+    background-color: grey;
+}
+
+
+.header {
+    background-color: gainsboro;
+}
+
+.header img {
+  padding: 1em;
+  max-width: 100%;
+}
+
+
+
+
+/* Title */
+
+
+
+
+.title  {
+    color: black;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.title p {
+    text-align: center;
+    color: black;
+
+}
+
+/* footer */
+
+.footer {
+
+    color: black;
+    background-color: gainsboro;
+    height: 7em;
+    border: hidden;
+
+}
+
+
+.footer p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+  font-size: 1.2em;
+  align-content: center;
+  background-color: gainsboro;
+  padding: 0.4em;
+}
+
+  .social a:link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+  font-size: 3em;
+  background-color: gainsboro;
+  padding: 0.1em;
+}
+
+
+/* font general */
+
+
+ p, td, th, dd, li {
+    text-align: justify;
+    color:darkgrey;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0.5em;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+
+}
