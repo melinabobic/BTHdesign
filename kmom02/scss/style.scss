@@ -1,0 +1,229 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+@import 'blockquotes';
+@import 'code';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+* {
+    font-family: 'Lato', sans-serif;
+    color: $font-alternative-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: $background-color;
+}
+
+* {
+    box-sizing: border-box;
+    border: none 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+ol,
+ul {
+    margin-left: 4em;
+    margin-right: 4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: $font-alternative-color;
+}
+
+a {
+    &:link {
+        text-decoration: none;
+        color: $font-alternative-color;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+%clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    font-family: monospace;
+    line-height: 1.5em;
+    color: $font-alternative-color;
+    flex-direction: column;
+    background-color: $background-color;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: justify;
+}
+
+.section {
+    max-width: 100%;
+    margin-left: 15em;
+    margin-right: 15em;
+    align-self: center;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .section {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+@media (max-width:900px) {
+    .section {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+.nav {
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em 0;
+        list-style: none;
+        flex-direction: row;
+
+        li {
+            padding-left: 3em;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            a {
+                @extend %clearfix;
+                display: block;
+                float: right;
+                padding: 0.5em 0;
+            }
+        }
+    }
+}
+
+.nav a {
+    color: #333;
+}
+
+.nav a:active,
+a:hover {
+    color: $background-color;
+}
+
+.site-header {
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    background-color: #808080;
+    color: $font-alternative-color;
+}
+
+.header {
+    max-width: 100%;
+    color: $font-alternative-color;
+    background-color: #dcdcdc;
+
+    img {
+        padding: 1em;
+        max-width: 100%;
+    }
+}
+
+.title {
+    color: $font-alternative-color;
+    text-align: center;
+    line-height: 1.5em;
+
+    p {
+        text-align: center;
+        color: $font-alternative-color;
+    }
+}
+
+.footer {
+    color: #000;
+    background-color: #dcdcdc;
+    height: 7em;
+    border: hidden;
+
+    p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: $font-alternative-color;
+        font-size: 1.2em;
+        align-content: center;
+        background-color: #dcdcdc;
+        padding: 0.4em;
+    }
+}
+
+.social {
+    a {
+        align-content: stretch;
+        color: #000;
+        font-size: 3em;
+        background-color: #dcdcdc;
+        padding: 0.1em;
+    }
+}
+
+p,
+td,
+th,
+dd,
+li {
+    text-align: justify;
+    color: $font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0.5em;
+    font-weight: bold;
+    color: $font-alternative-color;
+    text-align: center;
+}
